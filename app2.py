@@ -74,7 +74,13 @@ def poll_supabase():
         time.sleep(POLLING_INTERVAL)
 
 # Start polling thread
-threading.Thread(target=poll_supabase, daemon=True).start()
+#threading.Thread(target=poll_supabase, daemon=True).start()
+def start_polling():
+    thread = threading.Thread(target=poll_supabase, daemon=True)
+    thread.start()
+
+start_polling()
+
 
 
 # -------------------- ROUTES --------------------
