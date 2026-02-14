@@ -44,8 +44,9 @@ def poll_supabase():
                 .execute()
 
             if response.data:
-
+                print("RAW RESPONSE:", response.data)
                 row = response.data[0]
+                print("ROW:", row)
 
                 sample = [[
                     row["spo2"],
