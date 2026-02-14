@@ -1,0 +1,21 @@
+# Virtual environment
+venv/
+
+# Secrets / environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Dataset / data files
+*.csv
+
+# Training / experimental scripts
+datasetgen.py
+lgrtraining.py
+test_model.py
+test_model1.py
+test_model2.py
+app.py
+
