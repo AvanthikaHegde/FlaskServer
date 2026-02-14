@@ -50,7 +50,7 @@ def poll_supabase():
 
                 sample = [[
                     row["spo2"],
-                    row["bodytemp"],
+                    (row["bodytemp"]* 9/5) + 32,
                     row["heartrate"],
                     row["stepcount"],
                     row["env_pressure"]
